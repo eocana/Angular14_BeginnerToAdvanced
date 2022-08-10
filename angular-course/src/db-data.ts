@@ -1,13 +1,12 @@
 
 
 export const COURSES: any = [
-    undefined,
+ 
     {
         id: 1,
         description: "Venti",
         longDescription: "One of the many bards of Mondstadt, who freely wanders the city’s streets and alleys.",
-        /*iconUrl: '../assets/venti.png',*/
-        category: 'INTERMEDIATE',
+        iconUrl: '../assets/venti.png',
         
     },
     {
@@ -30,7 +29,7 @@ export const COURSES: any = [
     {
         id: 4,
         description: "Eula",
-        iconUrl: '../assets/eula.png',
+        /*iconUrl: '../assets/eula.png',*/
         longDescription: "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company.",
         category: 'BEGINNER',
        
