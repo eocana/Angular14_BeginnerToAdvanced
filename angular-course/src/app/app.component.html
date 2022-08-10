@@ -1,18 +1,29 @@
 <div class="top-menu">
 
     <img class="logo"
-         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+         src="../assets/angular_logo.png">
 
 </div>
 
 
 <div class="courses">
+  
+  <course-card 
+    *ngFor="let course of courses;index as i; first as isFirst; last as isLast;
+            even as isEven; odd as isOdd"
+    [class.is-first]="isFirst"
+    [class.is-last]="isLast"
+    [class.is-even]="isEven"
+    [class.is-odd]="isOdd"
+    (courseSelected)="oncourseSelected($event)" 
+    [course]="course"
+    [cardIndex]="i+1"></course-card>
 
-    <course-card (courseSelected)="oncourseSelected($event)" [course]="coreCourse"></course-card>
+    <!-- <course-card (courseSelected)="oncourseSelected($event)" [course]="coreCourse"></course-card>
 
     <course-card (courseSelected)="oncourseSelected($event)" [course]="rxjsCourse"></course-card>
 
-    <course-card (courseSelected)="oncourseSelected($event)" [course]="ngrxCourse"></course-card>
+    <course-card (courseSelected)="oncourseSelected($event)" [course]="ngrxCourse"></course-card> -->
 
 </div>
 

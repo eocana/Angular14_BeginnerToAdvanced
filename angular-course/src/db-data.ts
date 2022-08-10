@@ -1,82 +1,82 @@
 
 
 export const COURSES: any = [
-
+    undefined,
     {
         id: 1,
-        description: "Angular Core Deep Dive",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-core-in-depth-small.png',
-        longDescription: "A detailed walk-through of the most important part of Angular - the Core and Common modules",
+        description: "Venti",
+        longDescription: "One of the many bards of Mondstadt, who freely wanders the city’s streets and alleys.",
+        /*iconUrl: '../assets/venti.png',*/
         category: 'INTERMEDIATE',
-        lessonsCount: 10
+        
     },
     {
         id: 2,
-        description: "RxJs In Practice Course",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png',
-        longDescription: "Understand the RxJs Observable pattern, learn the RxJs Operators via practical examples",
+        description: "Zhongli",
+        iconUrl: '../assets/zhongli.png',
+        longDescription: "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
         category: 'BEGINNER',
-        lessonsCount: 10
+      
     },
 
     {
         id: 3,
-        description: 'NgRx In Depth',
-        longDescription: "Learn the modern Ngrx Ecosystem, including Store, Effects, Router Store, Ngrx Entity, Dev Tools and Schematics.",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-ngrx-course.png',
+        description: 'Kamisato Ayaka',
+        longDescription: "Daughter of the Yashiro Commission’s Kamisato Clan. Dignified and elegant, as well as wise and strong.",
+        iconUrl: '../assets/ayaka.png',
         category: 'ADVANCED'
     },
 
     {
         id: 4,
-        description: "Angular for Beginners",
-        iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular2-for-beginners-small-v2.png',
-        longDescription: "Establish a solid layer of fundamentals, learn what's under the hood of Angular",
+        description: "Eula",
+        iconUrl: '../assets/eula.png',
+        longDescription: "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company.",
         category: 'BEGINNER',
-        lessonsCount: 10
+       
     },
     {
         id: 5,
-        description: 'Angular Security Course',
-        longDescription: "Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
+        description: 'Raiden Shogun',
+        longDescription: "Her Excellency, the Almighty Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity.",
+        iconUrl: '../assets/raiden.png',
         category: 'ADVANCED',
-        lessonsCount: 11
+        
     },
     {
         id: 6,
-        description: 'Angular PWA Course',
-        longDescription: "<p class='course-description'>Learn Angular Progressive Web Applications, build the future of the Web Today.",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-pwa-course.png',
+        description: 'Kaedehara Kazuha',
+        longDescription: "A wandering samurai from Inazuma who is currently with Liyue’s Crux Fleet. A gentle and carefree soul whose heart hides a great many burdens from the past.",
+        iconUrl: '../assets/kazuha.png',
         category: 'ADVANCED',
-        lessonsCount: 8
+        
     },
     {
         id: 7,
-        description: 'Angular Advanced Course',
-        longDescription: "Learn Advanced Angular functionality typically used in Library Development. Advanced Components, Directives, Testing, Npm",
-        iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png',
+        description: 'Diluc',
+        longDescription: "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
+        iconUrl: '../assets/diluc.png',
         category: 'ADVANCED'
     },
     {
         id: 8,
-        description: 'Complete Typescript Course',
-        longDescription: "Complete Guide to Typescript From Scratch: Learn the language in-depth and use it to build a Node REST API.",
-        iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png',
+        description: 'Xiao',
+        longDescription: "A yaksha adeptus who defends Liyue. Also heralded as the “Conqueror of Demons” and “Vigilant Yaksha.”",
+        iconUrl: '../assets/xiao.png',
         category: 'BEGINNER'
     },
     {
         id: 9,
-        description: 'Angular Architecture Course',
-        longDescription: "Learn the core RxJs Observable Pattern as well and many other Design Patterns for building Reactive Angular Applications.",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png',
+        description: 'Tartaglia',
+        longDescription: "No. 11 of The Harbingers, also known as “Childe.” His name is highly feared on the battlefield.",
+        iconUrl: '../assets/childe.png',
         category: 'BEGINNER'
     },
     {
         id: 10,
-        description: "Angular Material Course",
-        iconUrl: "https://s3-us-west-1.amazonaws.com/angular-university/course-images/material_design.png",
-        longDescription: "Build Applications with the official Angular Widget Library",
+        description: "Yelan",
+        iconUrl: "../assets/yelan.png",
+        longDescription: "A mysterious person who claims to work for the Ministry of Civil Affairs, but is a “non-entity” on the Ministry of Civil Affairs’ list.",
         category: 'ADVANCED'
     }
 

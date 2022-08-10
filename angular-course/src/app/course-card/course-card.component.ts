@@ -11,6 +11,9 @@ export class CourseCardComponent implements OnInit {
   @Input()
   course: Course;
 
+  @Input()
+  cardIndex: number;
+
   @Output()
   courseSelected = new EventEmitter<Course>();
 
@@ -23,6 +26,10 @@ export class CourseCardComponent implements OnInit {
 
     console.log('onCourseViewed was clicked');
     this.courseSelected.emit(this.course);
+  }
+
+  isImageVisible() {
+    return this.course && this.course.iconUrl;
   }
 }
 
