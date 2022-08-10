@@ -1,5 +1,5 @@
 import { Component, Input, Output,OnInit, EventEmitter  } from '@angular/core';
-import {COURSES} from '../../db-data';
+
 import {Course} from '../model/course';
 @Component({
   selector: 'course-card',
@@ -30,6 +30,18 @@ export class CourseCardComponent implements OnInit {
 
   isImageVisible() {
     return this.course && this.course.iconUrl;
+  }
+
+  cardClasses() {
+
+    return {
+      'beginner': this.course.category == 'BEGINNER'
+    };
+  }
+
+  cardStyle() {
+    /*return {'text-decoration': 'underline',
+              'background-image': 'url(' + this.course.iconUrl+')'};*/
   }
 }
 
