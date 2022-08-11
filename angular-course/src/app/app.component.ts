@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {COURSES} from '../db-data';
+import { Course } from './model/course';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data = {
-    title: "<h1>my angular course</h1>",
-    msgInput: "Lore Ipsum"
-  };
 
-  onLogoClicked () {
-    alert('Hello world!');
-  }
+  courses = COURSES;
 
-  onKeyUp(newTitle: string) {
-    this.data.title = newTitle;
+ /*  
+  Without ng for core directive
+  coreCourse = COURSES[0];
+
+  rxjsCourse = COURSES[1];
+
+  ngrxCourse = COURSES[2]; */
+
+  title = COURSES[0].description;
+  startDate = new Date();
+  level = 90.00;
+  CRITrate = 0.5345;
+  course = COURSES[0];
+
+  oncourseSelected(course: Course) {
+    console.log('Card clicked by: card-component', course);
   }
 }
