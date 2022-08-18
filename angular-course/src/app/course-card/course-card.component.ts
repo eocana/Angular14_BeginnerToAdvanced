@@ -22,6 +22,7 @@ export class CourseCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   onCourseViewed() {
 
     console.log('onCourseViewed was clicked');
