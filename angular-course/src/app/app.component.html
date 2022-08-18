@@ -6,32 +6,42 @@
 
 
 
-<div class="courses">
+<div class="courses" #container>
   
-  <course-card 
-    *ngFor="let course of courses | slice:0:10 ;index as i; first as isFirst; last as isLast;
-            even as isEven; odd as isOdd"
-    [class.is-first]="isFirst"
-    [class.is-last]="isLast"
-    [class.is-even]="isEven"
-    [class.is-odd]="isOdd"
-    (courseSelected)="oncourseSelected($event)" 
-    [course]="course"
-    [cardIndex]="i+1"></course-card>
+  <button (click)="onCoursesEdited()">Edit courses</button>
 
-    <!-- <course-card (courseSelected)="oncourseSelected($event)" [course]="coreCourse"></course-card>
+  <course-card 
+    *ngFor="let course of courses"
+    (courseSelected)="oncourseSelected($event)" 
+    [course]="course">  </course-card>
+  
+  
+    <!-- 
+      <course-card 
+      *ngFor="let course of courses | slice:0:10 ;index as i; first as isFirst; last as isLast;
+              even as isEven; odd as isOdd"
+      [class.is-first]="isFirst"
+      [class.is-last]="isLast"
+      [class.is-even]="isEven"
+      [class.is-odd]="isOdd" 
+      (courseSelected)="oncourseSelected($event)" 
+      [course]="course"
+      [cardIndex]="i+1"></course-card>  
+      
+      
+    <course-card (courseSelected)="oncourseSelected($event)" [course]="coreCourse"></course-card>
 
     <course-card (courseSelected)="oncourseSelected($event)" [course]="rxjsCourse"></course-card>
 
     <course-card (courseSelected)="oncourseSelected($event)" [course]="ngrxCourse"></course-card> -->
-    <!-- Exemple with pipes -->
+    <!-- Exemple with pipes
     <div class="demo">
       <div *ngFor="let pair of course | keyvalue">
         {{pair.key + ': '+ pair.value}}
       </div>
       <div> Level: {{level | number: '2.2-5'}} </div>
       <div> CRITrate: {{CRITrate | percent: '2.2'}}</div>
-    </div>
+    </div> -->
 </div>
 
 
